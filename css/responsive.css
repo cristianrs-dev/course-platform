@@ -1,0 +1,133 @@
+/* Smartphones (até 360px) */
+@media (max-width: 360px) {
+    /* estilos para smartphones Adroid */
+    .header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #0669b8;
+        color: white;
+        text-transform: uppercase;
+        font-size:large;
+        height: 100px;
+      }
+    .navbar{
+        display: none;
+    }
+    .nav-list{
+        display: none;
+    }
+    .menuMobile{
+        display: block;
+    }
+    .box-banner{
+        flex-direction: column;
+    }
+    .box-titulo{
+        margin-top: 50px;
+    }
+    .frontEnd{
+        flex-direction: column;
+    }
+    .item-card{
+        flex-direction: column;
+    }
+    .card-texto{
+        max-width: 100%;
+    }
+  }
+@media (max-width: 480px) {
+    /* estilos para smartphones */
+    .header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #0669b8;
+        color: white;
+        text-transform: uppercase;
+        font-size:large;
+        height: 100px;
+      }
+    
+    .navbar{
+        display: none;
+    }
+    .nav-list{
+        display: none;
+    }
+    .menuMobile{
+        display: block;
+    }
+    .box-banner{
+        flex-direction: column;
+    }
+    .box-titulo{
+        margin-top: 50px;
+    }
+    .frontEnd{
+        flex-direction: column;
+    }
+    .item-card{
+        flex-direction: column;
+    }
+    .card-texto{
+        max-width: 100%;
+    }
+  }
+  
+  /* Tablets (481px a 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* estilos para tablets */
+    .header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #0669b8;
+        color: white;
+        text-transform: uppercase;
+        font-size:large;
+        height: 100px;
+      }
+    .navbar{
+        display: none;
+    }
+    .nav-list{
+        display: none;
+    }
+
+    .menuMobile{
+        display: block;
+    }
+
+    .box-banner{
+        flex-direction: column;
+    }
+    .box-titulo{
+        margin-top: 50px;
+    }
+    .frontEnd{
+        flex-direction: column;
+    }
+    .item-card{
+        flex-direction: column;
+    }
+    .card-texto{
+        max-width: 100%;
+    }
+  }
+  
+  /* Laptops (769px a 1024px) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* estilos para laptops */
+  }
+  
+  /* Desktops (1025px a 1200px) */
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    /* estilos para desktops */
+  }
+  
+  /* Monitores grandes (1201px e acima) */
+  @media (min-width: 1201px) {
+    /* estilos para monitores grandes */
+  }
+  

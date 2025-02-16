@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Cursos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    
+        <header  id="topo">
+            <h1 class="inline">Coders Academy</h1>
+            <nav id="navbar"  class="navbar ">
+                <ul class="nav-list inline">
+                  <li><a href="index.html">Início</a></li>
+                  <li><a href="pages/backend.html">Cursos</a></li>
+                  <li><a href="pages/test.html">Contatos</a></li>
+                </ul>
+              </nav>
+            </div>
+              <div class="menuMobile" id="openBtn">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+        </header>
+    
+        <nav  class="sidebar" id="sidebar">
+            <button id="close-btn">X</button>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pages/backend.html">Cursos</a></li>
+                <li><a href="pages/test.html">Contatos</a></li>
+            </ul>
+          </nav>
+    
+    <main class="course-gallery">
+      <!-- CARRINHO-->
+      <button id="cart-btn" type="button" class="btn">
+        <span id="show-hide-cart">Show</span> Cart
+      </button>
+      <div id="cart-container">
+        <button class="btn" id="clear-cart-btn">Clear Cart</button>
+        <div id="products-container"></div>
+        <p>Total number of items: <span id="total-items">0</span></p>
+        <p>Subtotal: <span id="subtotal">$0</span></p>
+        <p>Taxes: <span id="taxes">$0</span></p>
+        <p>Total: <span id="total">$0</span></p>
+      </div>
+      
+
+      <!-- CARRINHO-->
+
+       <!--PRODUTOS-->
+      <div id="dessert-card-container"></div>
+
+        <div class="course-card">
+            <img src="curso1.jpg" alt="Curso 1">
+            <h3>Curso de JavaScript</h3>
+            <p>Aprenda JS do básico ao avançado.</p>
+            <span class="price">R$ 199,90</span>
+        </div>
+        <div class="course-card">
+            <img src="curso2.jpg" alt="Curso 2">
+            <h3>Curso de HTML & CSS</h3>
+            <p>Domine a criação de páginas web.</p>
+            <span class="price">R$ 149,90</span>
+        </div>
+        <div class="course-card">
+            <img src="curso3.jpg" alt="Curso 3">
+            <h3>Curso de React</h3>
+            <p>Construa aplicações modernas com React.</p>
+            <span class="price">R$ 249,90</span>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-about">
+            <h3>Sobre</h3>
+            <p>
+              Cristian Ramos possui formação como técnico em desenvolvimento de
+              sistemas pelo Senac - RS, analista de sistemas pelo Centro Universitário
+              Unifavip, atua como freelancer desde 2019, é professor de informática,
+              consultor, fundador da Coders Academy
+            </p>
+          </div>
+          <div class="footer-contact">
+            <h3>Contato</h3>
+            <p>Email: professorcristianramos@gmail.com</p>
+            <p>Telefone: (92) 99459-2304 / 98133-6790</p>
+          </div>
+          <div class="footer-social">
+            <h3>Siga-nos</h3>
+            <a href="https://www.instagram.com/coders.cademy/">
+              <img
+                alt="Instagram"
+                src="img/instagram.png"
+              />
+            </a>
+            <a href="https://www.instagram.com/coders.cademy/">
+              <img
+                alt="github"
+                src="img/github.png"
+              />
+            </a>
+            <a href="https://wa.me/5592981336790?text=">
+              <img
+                alt="whatsapp"
+                src="img/whatsapp1.png"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/cristianrds/">
+              <img
+                alt="LinkedIn"
+                src="img/linkedin.png"
+              />
+            </a>
+          </div>
+          <div class="box-btnTopo">
+            <a href="#topo">
+              <img
+                alt="de_volta_ao_topo"
+                src="img/de-volta-ao-topo.png"
+                class="btnTopo"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2020 Coders Academy. Todos os direitos reservados.</p>
+        </div>
+        
+      </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
