@@ -52,11 +52,29 @@ const products =[
 
     products.forEach(({id,name,price,category}) => {
        dessertCards.innerHTML+=`
-       <div class="dessert-card">
-          <h2>${name}</h2>
+       <div class="dessert-card course-card">
+            <img src="curso1.jpg" alt="Curso 1">
+            <h2>${name}</h2>
+            <p class="dessert-price">$ ${price}</p>
+            <p class="product-category">Categoria: ${category}</p>
+            <button id="${id}" class="btn add-to-cart-btn" >Add to cart</button>
+            <p>Aprenda JS do básico ao avançado.</p>
+            <span class="price">R$ 199,90</span>
         </div>
+       <div >
        `
     });
+
+    class ShoppingCart{
+        constructor(){
+            this.items = [];
+            this.total = 0;
+            this.taxRate = 0.0825;
+        }
+        addItem(id,products){
+            
+        }
+    }
 
 
 /*MENU MOBILE*/
