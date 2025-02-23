@@ -10,7 +10,7 @@ const cartTaxes = document.getElementById("taxes")
 const cartTotal = document.getElementById("total")
 const showHideCartSpan = document.getElementById("show-hide-cart")
 let isCartShowing = false
-const products =[
+const products = [
      {
     "id":1, "name" : "Vanilla Cupcakes (6 Pack)", "price":12.99, "category":"Cupcake"
     },
@@ -66,15 +66,30 @@ const products =[
     });
 
     class ShoppingCart{
+       
         constructor(){
             this.items = [];
             this.total = 0;
             this.taxRate = 0.0825;
         }
+
         addItem(id,products){
+            const product = products.find(item => item.id === id)
+            const {name, price} = product;
+            this.items.push(product);
+            const totalCountPerProduct = {};
+            this.items.forEach(dessert=>{
+              return  totalCountPerProduct[dessert.id] = (totalCountPerProduct[dessert.id] || 0) + 1;
+                
+            })
             
         }
     }
+
+    let car = new ShoppingCart();
+    console.log(car.addItem(1,products))
+
+   
 
 
 /*MENU MOBILE*/
