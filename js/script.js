@@ -88,15 +88,20 @@ const products = [
             ? currentProductCountSpan.textContent = `${currentProductCount}x` 
             : productsContainer.innerHTML += `
                     <div id="dessert${id}" class="product">
-                        <p></p>
+                        <p>
+                        <span class="product-count" id="product-count-for-id${id}">
+                            ${name}
+                        </span>
+                        </p>
                         <p>${price}</p>   
                     </div>
             `
         }
     }
 
-    let car = new ShoppingCart();
-    console.log(car.addItem(1,products))
+    const cart = new ShoppingCart();
+    const addToCartBtns = document.getElementsByClassName("add-to-cart-btn")
+    console.log(cart.addItem(1,products))
 
    
 
