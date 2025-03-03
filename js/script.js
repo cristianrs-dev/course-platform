@@ -100,8 +100,21 @@ const products = [
     }
 
     const cart = new ShoppingCart();
-    const addToCartBtns = document.getElementsByClassName("add-to-cart-btn")
-    console.log(cart.addItem(1,products))
+    const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
+
+    [...addToCartBtns].forEach((btn)=>{
+        btn.addEventListener("click",(event)=>{
+            products.add(event.target.id);
+            cart.addItem(Number(event.target.id),products);
+        })
+    });
+
+    cartBtn.addEventListener("click", () => {
+        isCartShowing = !isCartShowing;
+        showHideCartSpan.textContent = isCartShowing ? "Hide" : "Show";
+        cartContainer.style.display = isCartShowing ? "block" : "none";
+    })
+   
 
    
 
