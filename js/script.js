@@ -97,6 +97,10 @@ const products = [
                     </div>
             `
         }
+
+        getCounts(){
+            return this.items.length;
+          }
     }
 
     const cart = new ShoppingCart();
@@ -106,6 +110,7 @@ const products = [
         btn.addEventListener("click",(event)=>{
             products.add(event.target.id);
             cart.addItem(Number(event.target.id),products);
+            totalNumberOfItems.textContent = cart.getCounts();
         })
     });
 
