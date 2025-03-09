@@ -104,6 +104,9 @@ const products = [
               return subTotal;
           }
 
+        getCounts(){
+            return this.items.length;
+          }
 
     }
 
@@ -114,6 +117,7 @@ const products = [
         btn.addEventListener("click",(event)=>{
             products.add(event.target.id);
             cart.addItem(Number(event.target.id),products);
+            totalNumberOfItems.textContent = cart.getCounts();
         })
     });
 
