@@ -97,6 +97,14 @@ const products = [
                     </div>
             `
         }
+
+        calculateTotal(){
+            const subTotal =  this.items.reduce((total,item)=>
+                total + item.price,0)
+              return subTotal;
+          }
+
+
     }
 
     const cart = new ShoppingCart();
