@@ -58,12 +58,14 @@ const products = [
             <p class="dessert-price">$ ${price}</p>
             <p class="product-category">Categoria: ${category}</p>
             <button id="${id}" class="btn add-to-cart-btn" >Add to cart</button>
-            <p>Aprenda JS do básico ao avançado.</p>
-            <span class="price">R$ 199,90</span>
         </div>
        <div >
        `
     });
+    /*
+            <p>Aprenda JS do básico ao avançado.</p>
+            <span class="price">R$ 199,90</span>
+    */
 
     class ShoppingCart{
        
