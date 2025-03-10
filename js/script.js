@@ -101,6 +101,10 @@ const products = [
         getCounts(){
             return this.items.length;
           }
+
+        calculateTaxes(amount){
+            return parseFloat(((this.taxRate/100)*amount).toFixed(2))
+        }
     }
 
     const cart = new ShoppingCart();
