@@ -25,25 +25,22 @@ let isCartShowing = false
        <div >
        `
     });
-    /*
-            <p>Aprenda JS do básico ao avançado.</p>
-            <span class="price">R$ 199,90</span>
-    */
+   
 
     class ShoppingCart{
        
         constructor(){
             this.items = [];
             this.total = 0;
-            this.taxRate = 0.0825;
+            this.taxRate = 8.25;
         }
 
         addItem(id,products){
-            const product = products.find(item => item.id === id)
+            const product = products.find((item) => item.id === id)
             const {name, price} = product;
             this.items.push(product);
             const totalCountPerProduct = {};
-            this.items.forEach(dessert=>{
+            this.items.forEach((dessert)=>{
               totalCountPerProduct[dessert.id] = (totalCountPerProduct[dessert.id] || 0) + 1;
                 
             })
@@ -60,7 +57,7 @@ let isCartShowing = false
                         </p>
                         <p>${price}</p>   
                     </div>
-            `
+            `;
         }
 
         calculateTotal(){
@@ -69,6 +66,9 @@ let isCartShowing = false
             const tax = this.calculateTaxes(subTotal);
             this.total= tax + subTotal ;
             cartSubTotal.textContent = `$${subTotal.toFixed(2)}`
+            cartTaxes.textContent = `$${tax.toFixed(2)}`;
+            cartTotal.textContent = `$${this.total.toFixed(2)}`;
+            return this.total;
           }
 
         getCounts(){
@@ -79,6 +79,10 @@ let isCartShowing = false
         calculateTaxes(amount){
             return parseFloat(((this.taxRate/100)*amount).toFixed(2))
         }
+
+        clearCart(){
+  
+        }
     }
 
     const cart = new ShoppingCart();
@@ -86,9 +90,9 @@ let isCartShowing = false
 
     [...addToCartBtns].forEach((btn)=>{
         btn.addEventListener("click",(event)=>{
-            products.add(event.target.id);
             cart.addItem(Number(event.target.id),products);
             totalNumberOfItems.textContent = cart.getCounts();
+            cart.calculateTotal();
         })
     });
 
