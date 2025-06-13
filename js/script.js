@@ -18,9 +18,9 @@ let isCartShowing = false
        <div class="dessert-card course-card">
             <img src="curso1.jpg" alt="Curso 1">
             <h2>${name}</h2>
-            <p class="dessert-price">$ ${price}</p>
+            <p class="dessert-price">R$ ${price}</p>
             <p class="product-category">Categoria: ${category}</p>
-            <button id="${id}" class="btn add-to-cart-btn" >Add to cart</button>
+            <button id="${id}" class="btn add-to-cart-btn" >Adicionar ao Carrinho</button>
         </div>
        <div >
        `
@@ -82,10 +82,20 @@ let isCartShowing = false
 
         clearCart(){
             if(!this.items.length){
-                alert("Your shopping cart is already empty!")
+                alert("Seu carrinho ja está vazio")
                 return
             }
-            this.items=[]
+            const isCartCleared = confirm("Tem certeza que deseja limpar o carrinho?")
+            if(isCartCleared){
+                this.items = []
+                this.total=0
+                productsContainer.innerHTML=""
+                this.total= 0
+            cartSubTotal.textContent = 0
+            cartTaxes.textContent = 0
+            cartTotal.textContent = 0
+            totalNumberOfItems.textContent=0
+            }
         }
     }
 
@@ -105,7 +115,7 @@ let isCartShowing = false
         showHideCartSpan.textContent = isCartShowing ? "Hide" : "Show";
         cartContainer.style.display = isCartShowing ? "block" : "none";
     })
-   
+    clearCartBtn.addEventListener("click",cart.clearCart.bind(cart))
 
    
 

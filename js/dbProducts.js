@@ -1,40 +1,16 @@
 const products = [
-    {
-   "id":1, "name" : "Vanilla Cupcakes (6 Pack)", "price":12.99, "category":"Cupcake"
-   },
-{
-   "id":2,"name" : "French Macaron", "price":3.99, "category":"Macaron"
-},
-{
-   "id":3,"name" : "Pumpkin Cupcake", "price":3.99, "category":"Cupcake"
-},
-{
-   "id":4,"name" : "Chocolate Cupcake", "price":5.99, "category":"Cupcake"
-},
-{
-   "id":5, "name":"Chocolate Pretzels (4 Pack)", "price":10.99,"category":"Pretzel"
-},
-{
-   "id":6, "name":"Strawberry Ice Cream", "price":2.99,"category":"Ice Cream"
-},
-{
-   "id":7, "name":"Chocolate Macarons (4 Pack)", "price":9.99,"category":"Macaron"
-},
-{
-   "id":8, "name":"Strawberry Pretzel", "price":4.99,"category":"Pretzel"
-},
-{
-   "id":9, "name":"Butter Pecan Ice Cream", "price":2.99,"category":"Ice Cream"
-},
-{
-   "id":10, "name":"Rocky Road Ice Cream", "price":2.99,"category":"Ice Cream"
-},
-{
-   "id":11, "name":"Vanilla Macarons (5 Pack)", "price":11.99,"category":"Macaron"
-},
-{
-   "id":12, "name":"Lemon Cupcakes (4 Pack)", "price":12.99,"category":"Cupcake"
-}
-]
-
-export default products;
+   { id: 1, name: "Informática Básica",           price: 750.00, category: "Informática", hours: 30 },
+   { id: 2, name: "Word Básico",                  price: 375.00, category: "Informática", hours: 15 },
+   { id: 3, name: "Word Intermediário",           price: 500.00, category: "Informática", hours: 20 },
+   { id: 4, name: "Word Avançado",                price: 500.00, category: "Informática", hours: 20 },
+   { id: 5, name: "Excel Básico",                 price: 500.00, category: "Informática", hours: 20 },
+   { id: 6, name: "Excel Intermediário",          price: 625.00, category: "Informática", hours: 25 },
+   { id: 7, name: "Excel Avançado",               price: 625.00, category: "Informática", hours: 25 },
+   { id: 8, name: "Power BI Básico",              price: 750.00, category: "Informática", hours: 30 },
+   { id: 9, name: "Power Query",                  price: 500.00, category: "Informática", hours: 20 },
+   { id: 10, name: "Word do Básico ao Avançado",  price: 1250.00, category: "Informática", hours: 50 },
+   { id: 11, name: "Excel do Básico ao Avançado", price: 1500.00, category: "Informática", hours: 60 }
+ ];
+ 
+ export default products;
+ 
