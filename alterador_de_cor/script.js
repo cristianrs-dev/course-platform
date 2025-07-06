@@ -51,3 +51,12 @@ botao.onclick = mudarCorDeFundo;
 console.log(elementoHexCor);
 
 obterIndiceAleatorio(); 
+
+
+/**
+ * PROJETOS PROPOSTOS
+ * "Tema aleatório com prévias visuais"
+ * "Simulador de roleta de prêmios"
+ * "Sorteador de nomes para sala de aula"
+ * Gerador de frases motivacionais"
+ */
