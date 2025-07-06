@@ -1,4 +1,4 @@
-const darkColorsArr = [
+const coresEscuras = [
   "#2C3E50",
   "#34495E",
   "#2C2C2C",
@@ -11,10 +11,31 @@ const darkColorsArr = [
   "#800020",
 ];
 
-function getRandomIndex(){
-console.log(Math.floor(darkColorsArr.length * Math.random()));
-  const randomIndex = Math.floor(darkColorsArr.length * Math.random());
-  return randomIndex;
+/*A função Math.floor() arredonda um número para baixo, 
+ou seja, para o inteiro mais próximo menor ou igual ao número.*/
+function obterIndiceAleatorio() {
+  const indiceAleatorio = Math.floor(coresEscuras.length * Math.random());
+  console.log(indiceAleatorio);
+  return indiceAleatorio;
 }
 
-getRandomIndex();
+const corpo = document.querySelector("body"); 
+const elementoHexCor = document.querySelector("#bg-hex-code");
+
+//muda a cor do body
+function mudarCorDeFundo() {
+  const cor = coresEscuras[obterIndiceAleatorio()];
+
+  elementoHexCor.innerText = cor;
+  corpo.style.backgroundColor = cor;
+}
+
+const botao = document.querySelector("#btn");
+console.log(botao);
+
+
+botao.onclick = mudarCorDeFundo;
+
+console.log(elementoHexCor);
+
+obterIndiceAleatorio(); 
